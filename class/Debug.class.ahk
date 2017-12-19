@@ -49,7 +49,10 @@ class Debug
 			return false
 
 		; Добавление лога
-		return this.log[] := { "info": info, "position": position, "level": level }
+		return this.log[] := { "timestamp" : timestamp()
+		                     , "info"      : info
+		                     , "position"  : position
+		                     , "level"     : level }
 	}
 
 	/**
@@ -70,11 +73,10 @@ class Debug
 		}
 
 		; Подготовка информации (data) к отправке
-		data := Object()
-		data.nickname := user_nickname
-		data.server   := user_server
-		data.version  := program_version
-		data.log      := log
+		data := { "nickname" : user_nickname
+		        , "server"   : user_server
+		        , "version"  : program_version
+		        , "log"      : log }
 
 		; Использовать cURL
 	}

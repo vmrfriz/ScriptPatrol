@@ -13,3 +13,13 @@ array_search(value, array) {
 		return key
 	}
 }
+
+/**
+ * Время в UNIX-формате. Для указания своей даты, в качестве параметра нужно передать дату в формате YYYYMMDDHHMISS
+ *
+ * @type {integer} Возвращает время в unix timestamp
+ */
+timestamp(time := 0)
+{
+	return ( time != 0 ? time : A_Now ) - 1970,s
+}
