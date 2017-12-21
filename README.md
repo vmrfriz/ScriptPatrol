@@ -1,4 +1,4 @@
-## ScriptPatrol 2.0 [:earth_africa:](https://scriptpatrol.tk)
+## ScriptPatrol 2.0 [:globe_with_meridians:](https://scriptpatrol.tk)
 
 #### Основные модули программы
 - [События](#evt): назначение действий, выполняемых после определённого события
